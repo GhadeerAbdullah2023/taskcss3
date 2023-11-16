@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.page{
+
+    background-color: rgb(15, 92, 66);
+    height: 100vh;
+    color: #fff;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-areas:
+     "header header header header header header header header " 
+    "aside aside aside cont cont cont cont cont    "
+    "footer footer footer footer footer footer footer footer ";
+}
+
+@media screen and (min-width:600px) {
+    
+}
+.header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+.aside{
+    
+    grid-area: aside;
+    background-color: violet;
+}
+.main{
+    grid-area: cont;
+    background-color: brown;
+}
+
+.footer{
+
+    grid-area: footer;
+    background-color: cadetblue;
+}
+
+body{
+
+    background-color: aliceblue;
+    
+
+}
+
+.card{
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border: 1px solid rgb(230, 227, 227);
+    margin-right: auto;
+    margin: 20px;
+    border-radius: 5px;
+    float: left;
+   
+
+}
+.card_header{
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+
+
+}
+.icon{
+
+    background-color: rgb(12, 10, 10);
+    font-size: 14 px;
+    position: relative;
+    bottom: 143px;
+    left: 10px;
+
+    
+}
+span{
+    font-size: 10px;
+    color: rgb(248, 245, 245);
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(149, 153, 153);
+    margin-left: 10px;
+    margin-bottom: 200px;
+    background-color: black;
+    
+}
+h3{
+    margin-top: 20px;
+}
+.rec{
+    background-color: gray;
+     width: 50px;
+      height: 300px;
+      display: inline-block;
+
+}
+h4{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+p{
+    margin-top: 10px;
+}
